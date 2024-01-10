@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"
+      integrity="sha512-b94Z6431JyXY14iSXwgzeZurHHRNkLt9d6bAHt7BZT38eqV+GyngIi/tVye4jBKPYQ2lBdRs0glww4fmpuLRwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="index.css" />
+<link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js-Projects</title>
+    <meta
+      name="description"
+      content="Simple Javascript projects like todo list and calculator"
+    />
+  </head>
+  <body>
+    <nav class="nav">
+      <ul>
+        <li><a href="#intro">Intro</a></li>
+        <li>
+          <a href="#Projects">Projects</a>
+        </li>
+        <li>
+          <a href="#Contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="intro" id="intro">
+      <div class="intro__text">
+        <h1>
+          Hii!!👋🏻<br />
+          I'm Shivansh! <br />
+        </h1>
+        <h2>Front End Engineer!!</h2>
+        <h3>Following are my Vanilla Javascript projects</h3>
+      </div>
+      <div class="image">
+        <img class="logo__image js__logo" src="./js.png" alt="" />
+        <img class="logo__image html__logo" src="./html.svg" alt="" />
+        <img class="logo__image css__logo" src="./css.svg" alt="" />
+      </div>
+    </section>
+    <div id="Projects" class="container container__1">
+      <div class="app Draw">
+        <div class="draw__topbar" id="toolbar">
+          <h1 class="sketch-logo">Sketch!!</h1>
+          <input id="stroke" name="stroke" type="color" value="#FF0000" />
+          <button id="clear" class="clear__drawing">❌</button>
+        </div>
+        <canvas id="drawingBoard"></canvas>
+      </div>
+
+      <div class="app Music">
+        <div class="music__background">
+          <img class="background-image" src="./music/taxi.png" alt="" />
+        </div>
+        <img class="music__poster" src="./music/taxi.png" alt="" />
+        <div class="music__controls">
+          <button class="music__control music__prev">⏮</button>
+          <button class="music__control music__pause">▶️</button>
+          <button class="music__control music__next">⏭</button>
+        </div>
+      </div>
+
+      <div class="app Timer">
+        <input type="number" id="timer_duration" value="30" />
+        <div class="timer__button-wrapper">
+          <button class="timer__button" id="timer_start">🟢</button>
+          <button class="timer__button" id="timer_pause">🟡</button>
+          <button class="timer__button" id="timer_reset">🔴</button>
+        </div>
+      </div>
+      <div class="app Phone">
+        <iframe src="./phonesim/index.html"></iframe>
+        
+      </div>
+      <div class="app weather">
+        <div class="greet"></div> 
+     </div>
+      <div class="app Movies">
+        <div class="movie__nav">
+          <img class="movie-js" src="./movie-js.png" alt="" />
+        </div>
+        <div class="movie__container">
+
+
+        </div>
+        <div class="movie__search">
+          <form action="">
+            <button type="submit" class="movie-searchButton">🔎</button>
+            <input class="movie__search-input" value="Taxi Driver" type="text"></input>
+          </form>
+        </div>
+      </div>
+    </div>
+    <section class="contact" id="Contact">
+<h2>
+  These Projects were made in late 2023 with vanilla js <br> I hope you Like them !!
+  Please visit My Latest <button class="portfolio"><a href="https://famous-sopapillas-9dce19.netlify.app">Portfolio</a></button>
+  <br>
+  <button class="portfolio"><a href="mailto:codersharma24251@gmail.com">Email me!</a></button>
+
+</h2>
+    </section>
+    <script type="module" src="./src/js/index.js"></script>
+    <script type="module" src="./src/js/draw.js"></script>
+    <script type="module" src="./src/js/music.js"></script>
+    <script type="module" src="./src/js/movies.js"></script>
+    <script type="module" src="./src/js/timer.js"></script>
+  </body>
+</html>
