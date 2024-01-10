@@ -193,7 +193,10 @@ a {
   width: 90vw;
   max-width: 135rem;
   min-width: 130rem;
-  margin: auto;
+  /* margin: auto; */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   margin-top: 2rem;
   transition: all 0.3s ease;
 }
@@ -754,7 +757,7 @@ iframe {
   position: relative;
   /* height: 60rem; */
   top: 13rem;
-  width: 90vw;
+  /* width: 90vw; */
   margin: 0 auto;
   align-items: center;
   justify-content: space-around;
@@ -785,6 +788,7 @@ iframe {
   font-size: 4rem;
   text-align: center;
   font-weight: bold;
+  /* min-width: 70rem; */
 }
 .greet {
   position: relative;
